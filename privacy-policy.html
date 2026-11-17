@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Conquer</title>
+<meta name="description" content="Privacy policy for the Conquer Chrome extension by Hacking Everything.">
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+  .short { background: #f4f4f4; border-left: 3px solid #555; padding: 0.75rem 1rem; border-radius: 0 4px 4px 0; margin-bottom: 2rem; }
+  ul { padding-left: 1.5rem; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy — Conquer</h1>
+<p class="meta">Last updated: November 2026 &nbsp;·&nbsp; <a href="index.html">Back to home</a></p>
+
+<p class="short"><strong>Short version:</strong> Conquer runs entirely on your machine. Your chess positions, moves, and game data never leave your browser. The extension holds no servers and collects no analytics.</p>
+
+<h2>What Conquer collects</h2>
+<p>The extension stores the following data locally in your browser using Chrome's built-in storage API:</p>
+<ul>
+  <li>Your extension settings (engine depth, auto-move preferences, display options)</li>
+  <li>A cached record of your license status so the extension does not need to verify on every move</li>
+</ul>
+<p>This data never leaves your device.</p>
+
+<h2>Chess data and analysis</h2>
+<p>All analysis is performed locally using a WebAssembly build of Stockfish. No board positions, moves, game IDs, or usernames are sent to any external server.</p>
+<p>When you use the opening explorer feature, your current board position is sent to <code>explorer.lichess.ovh</code> (Lichess's public opening database API) in standard notation only.</p>
+
+<h2>License verification</h2>
+<p>License keys are verified entirely offline using a cryptographic signature. No network request is made to verify your license after purchase.</p>
+<p>When you purchase a license, the transaction is handled by SellAuth and Stripe under their own privacy policies. Conquer's developer receives only your delivery email address.</p>
+
+<h2>No analytics or tracking</h2>
+<p>Conquer contains no analytics, crash reporting, telemetry, or tracking of any kind.</p>
+
+<h2 id="permissions">Permissions</h2>
+<ul>
+  <li><strong>chess.com</strong> — inject the analysis overlay and read board state</li>
+  <li><strong>storage</strong> — save your settings and license cache locally</li>
+  <li><strong>offscreen</strong> — run the Stockfish engine in a background worker</li>
+  <li><strong>activeTab</strong> — identify which tab triggered a keyboard shortcut</li>
+</ul>
+
+<h2>Children</h2>
+<p>Conquer is not directed at children under 13 and does not knowingly collect information from them.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes materially, the updated version will be published at this URL with a revised date.</p>
+
+<h2>Contact</h2>
+<p>Questions can be sent via the support channel at <a href="https://conquerchess.mysellauth.com">conquerchess.mysellauth.com</a>.</p>
+</body>
+</html>
